@@ -49,6 +49,7 @@ public class Sort_the_colors {
                     break;
                 case 1:
                     mid++;
+                    break;
                 case 2:
                     int temp2 = nums[mid];
                     nums[mid] = nums[high];
