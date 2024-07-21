@@ -1,6 +1,6 @@
 class Solution{
   public static int countPairs(int[] arr,int n){
-    
+    //Time and Space Complexity Of Brute Force :O(N^2) and O(1)
     int count = 0;
     for(int i=0;i<n;i++){
       for(int j=i+1;j<n;j++){
@@ -12,7 +12,8 @@ class Solution{
     return count;
   }
   static int team(int[] skill , int n){
-    return countPairs(skill,n);
+    int n = nums.length;
+    return mergeSort(nums,0,n-1);
   }
   public static int countPairsOptimal(int[] arr,int low,int high,int mid ){
     //Time Complexity : O(2*NlogN) and O(N) space complexity as merge() function takes O(N) times and countPairs takes O(N) times as we are iterating left half once and right half once
